@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node --test" 
+    "test": "node --test",
+    "lint:html": "html-validate index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
     "url": "https://github.com/denissuuu/Automatisation_GIt/issues"
   },
   "homepage": "https://github.com/denissuuu/Automatisation_GIt#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "html-validate": "^10.9.0"
+  }
 }
