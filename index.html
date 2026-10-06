@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B3 Versionning</title>
+    <script>
+      window.sentryOnLoad = function () {
+        Sentry.init({ release: "b3-versioning@1.2.0", environment: "dev" });
+      };
+    </script>
+    <script
+      src="https://js-de.sentry-cdn.com/a84ce75063d37ebddd03065424275b61.min.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -15,6 +24,7 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" />
         <button type="submit">Se connecter</button>
+        <button type="button" onclick="myUndefinedFunction()">Tester Sentry</button>
       </form>
     </main>
   </body>
